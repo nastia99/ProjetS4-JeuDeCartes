@@ -1,0 +1,114 @@
+.cartes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  --angle: 10deg;
+  --hover-translate: -4em;
+  animation: loadCardFan 250ms ease-in-out ;
+}
+
+.carte {
+  position: absolute;
+  width: 15vw;
+  height: 25vw;
+  background:white;
+  border:2px inset black;
+  box-shadow: 5px 5px 15px -2px;
+  cursor: move;
+  transform-origin: 50% 80vw;
+  transition: transform 75ms ease-in-out;
+}
+
+/* 1 card case */
+.carte:first-of-type:nth-last-of-type(1):hover {transform: translateY(var(--hover-translate));}
+
+
+/* 2 cards case */
+.carte:first-of-type:nth-last-of-type(2)                         {transform: rotateZ(calc(var(--angle) * -.5));}
+.carte:first-of-type:nth-last-of-type(2) ~ .carte:nth-of-type(2) {transform: rotateZ(calc(var(--angle) *  .5));}
+
+.carte:first-of-type:nth-last-of-type(2):hover                         {transform: rotateZ(calc(var(--angle) * -.5)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(2) ~ .carte:nth-of-type(2):hover {transform: rotateZ(calc(var(--angle) *  .5))  translateY(var(--hover-translate));}
+
+
+/* 3 cards case */
+.carte:first-of-type:nth-last-of-type(3)                         {transform: rotateZ(calc(var(--angle) * -1));}
+.carte:first-of-type:nth-last-of-type(3) ~ .carte:nth-of-type(3) {transform: rotateZ(calc(var(--angle) *  1));}
+
+.carte:first-of-type:nth-last-of-type(3):hover                         {transform: rotateZ(calc(var(--angle) * -1)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(3) ~ .carte:nth-of-type(2):hover {transform: translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(3) ~ .carte:nth-of-type(3):hover {transform: rotateZ(calc(var(--angle) *  1)) translateY(var(--hover-translate));}
+
+
+/* 4 cards case */
+.carte:first-of-type:nth-last-of-type(4)                         {transform: rotateZ(calc(var(--angle) * -1.5));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(2) {transform: rotateZ(calc(var(--angle) *  -.5));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(3) {transform: rotateZ(calc(var(--angle) *   .5));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(4) {transform: rotateZ(calc(var(--angle) *  1.5));}
+
+.carte:first-of-type:nth-last-of-type(4):hover                         {transform: rotateZ(calc(var(--angle) * -1.5)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(2):hover {transform: rotateZ(calc(var(--angle) *  -.5)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(3):hover {transform: rotateZ(calc(var(--angle) *   .5)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(4) ~ .carte:nth-of-type(4):hover {transform: rotateZ(calc(var(--angle) *  1.5)) translateY(var(--hover-translate));}
+
+
+/* 5 cards case */
+.carte:first-of-type:nth-last-of-type(5)                         {transform: rotateZ(calc(var(--angle) * -2));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(2) {transform: rotateZ(calc(var(--angle) * -1));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(4) {transform: rotateZ(calc(var(--angle) *  1));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(5) {transform: rotateZ(calc(var(--angle) *  2));}
+
+.carte:first-of-type:nth-last-of-type(5):hover                         {transform: rotateZ(calc(var(--angle) * -2)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(2):hover {transform: rotateZ(calc(var(--angle) * -1)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(3):hover {transform: translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(4):hover {transform: rotateZ(calc(var(--angle) *  1)) translateY(var(--hover-translate));}
+.carte:first-of-type:nth-last-of-type(5) ~ .carte:nth-of-type(5):hover {transform: rotateZ(calc(var(--angle) *  2)) translateY(var(--hover-translate));}
+
+.carte:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  cursor: default;
+}
+
+h2, a {
+  float: right;
+}
+
+h2 {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.score {
+  display: inline-block;
+  border:2px inset black;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  padding: 2px 20px 2px 20px;
+  margin-left: 15px;
+}
+
+
+@keyframes loadCardFan {
+  0% {--angle: 0deg;}
+  10% {--angle: 1deg;}
+  20% {--angle: 2deg;}
+  30% {--angle: 3deg;}
+  40% {--angle: 4deg;}
+  50% {--angle: 5deg;}
+  60% {--angle: 6deg;}
+  70% {--angle: 7deg;}
+  80% {--angle: 8deg;}
+  90% {--angle: 9deg;}
+  100% {--angle: 10deg;}
+}

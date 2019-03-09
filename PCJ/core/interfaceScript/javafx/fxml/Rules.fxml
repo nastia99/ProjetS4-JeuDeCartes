@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="rulesPane" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.RulesController">
+   <children>
+      <GridPane fx:id="globalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../css/menu.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle opacity="0.72" radius="480.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3700ff" />
+                        <Stop color="#84a4d1d2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Circle>
+            <GridPane styleClass="text-area" stylesheets="@../css/menu.css" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowSpan="5">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="60.0" top="60.0" />
+               </GridPane.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.Button" textAlignment="CENTER" wrappingWidth="370.9367427825928" y="65.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="190.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                  <Button layoutX="340.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#retour" pickOnBounds="false" styleClass="general-button" stylesheets="@../css/menu.css" text="Retour">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateLeft90" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationLeft.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateRight90" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationRight.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="rules3" opacity="0.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="184.0" fitWidth="528.0" layoutX="138.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/normalCards.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="42.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.inGame1" wrappingWidth="730.875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="97.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.game">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-10.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.inGame2" wrappingWidth="869.2093563079834">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-9.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.inGame3" wrappingWidth="802.913818359375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="508.0" layoutY="587.0" mnemonicParsing="false" onMouseClicked="#showRules3" styleClass="general-button" text="%next.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="139.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#showOldRules2" styleClass="general-button" text="%previous.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="rules2" opacity="0.0" prefHeight="200.0" prefWidth="769.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="184.0" fitWidth="528.0" layoutX="13.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/normalCards.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="33.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardNormale">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="97.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.card">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="575.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardSpecial">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-10.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardNormaleTxt">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="187.0" fitWidth="119.0" layoutX="591.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/specialCard.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="14.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardSpeExp" wrappingWidth="777.79296875">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="38.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardSpeDif">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.cardSpeDifTxt" wrappingWidth="802.913818359375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="508.0" layoutY="587.0" mnemonicParsing="false" onMouseClicked="#showRules2" styleClass="general-button" text="%next.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="139.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#showOldRules1" styleClass="general-button" text="%previous.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="rules4" opacity="0.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Text layoutX="42.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.endManche" wrappingWidth="730.875">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="97.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.EOG">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.endMTxt" wrappingWidth="761.2093563079834">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-9.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.endPartie" wrappingWidth="802.913818359375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-6.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.endPTxt" wrappingWidth="863.2623291015625">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="139.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#showOldRules3" styleClass="general-button" text="%previous.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="rules1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.rowSpan="3">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="650.0" layoutX="110.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/cards_nb_flies.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="9.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.butTxt" wrappingWidth="787.4642333984375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="31.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.but">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="18.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%rules.prep">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-1.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%prepTxt" wrappingWidth="869.2093505859375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="-10.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%prepTxt2" wrappingWidth="869.2093563079834">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="508.0" layoutY="587.0" mnemonicParsing="false" onMouseClicked="#regles1" styleClass="general-button" text="%next.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

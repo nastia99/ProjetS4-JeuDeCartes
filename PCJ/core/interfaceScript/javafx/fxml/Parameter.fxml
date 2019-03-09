@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="parameterPane" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.ParameterController">
+   <children>
+      <GridPane fx:id="globalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../css/menu.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle opacity="0.72" radius="480.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3700ff" />
+                        <Stop color="#84a4d1d2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Circle>
+            <GridPane GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowSpan="5">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="60.0" top="60.0" />
+               </GridPane.margin>
+               <children>
+                  <Text fx:id="param_title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%param.title" textAlignment="CENTER" wrappingWidth="370.9367427825928" y="65.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="190.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fx:id="param_musique" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%sound" textAlignment="CENTER" wrappingWidth="370.9367427825928" y="65.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="60.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Slider fx:id="musicSlider" minHeight="-Infinity" minorTickCount="4" onMouseDragged="#updateSound" prefHeight="38.0" prefWidth="357.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="60.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <ImageView fitHeight="230.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true" rotate="-11.3" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../assets/cards/color/spe.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="75.0" top="200.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                   <MenuBar fx:id="param_theme" layoutX="489.0" layoutY="14.0" style="-fx-font-size: 20;">
+                       <menus>
+                           <Menu mnemonicParsing="false" text="%param.themes">
+                               <items>
+                                   <RadioMenuItem id="paquesButton" fx:id="buttonEasterTheme" mnemonicParsing="false" onAction="#updateTheme" style="-fx-font-size: 20;" text="%theme.paques">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="theme" />
+                                 </toggleGroup></RadioMenuItem>
+                                   <RadioMenuItem id="cocotierButton" fx:id="buttonSummerTheme" mnemonicParsing="false" onAction="#updateTheme" style="-fx-font-size: 20;" text="%theme.plage" toggleGroup="$theme" />
+                                   <RadioMenuItem id="halloweenButton" fx:id="buttonHalloweenTheme" mnemonicParsing="false" onAction="#updateTheme" style="-fx-font-size: 20;" text="%theme.halloween" toggleGroup="$theme" />
+                                   <RadioMenuItem id="noelButton" fx:id="buttonChristmasTheme" mnemonicParsing="false" onAction="#updateTheme" style="-fx-font-size: 20;" text="%theme.noel" toggleGroup="$theme" />
+                                   <RadioMenuItem id="defautButton" fx:id="buttonDefaultTheme" mnemonicParsing="false" onAction="#updateTheme" style="-fx-font-size: 20;" text="%theme.defaut" toggleGroup="$theme" />
+                               </items>
+                           </Menu>
+                       </menus>
+                   </MenuBar>
+                  <Button fx:id="retour" layoutX="330.0" layoutY="172.0" mnemonicParsing="false" onMouseClicked="#retour" styleClass="general-button" stylesheets="@../css/menu.css" text="%retour.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <MenuBar fx:id="param_langue" layoutX="233.0" layoutY="15.0" style="-fx-font-size: 20;">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="%param.lang">
+                        <items>
+                              <RadioMenuItem fx:id="buttonEnLang" mnemonicParsing="false" onAction="#updateLang" onMenuValidation="#updateLang" text="%en.Lng">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="langues" />
+                                 </toggleGroup></RadioMenuItem>
+                              <RadioMenuItem fx:id="buttonFrLang" mnemonicParsing="false" onAction="#updateLang" onMenuValidation="#updateLang" text="%fr.Lng" toggleGroup="$langues" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateRight90" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationRight.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateLeft90" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationLeft.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

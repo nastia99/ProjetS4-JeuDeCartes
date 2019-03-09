@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="leavePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.LeaveController">
+   <children>
+      <GridPane fx:id="globalGrid" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <stylesheets>
+            <URL value="@../css/menu.css" />
+            <URL value="@../css/menu.css" />
+         </stylesheets>
+         <children>
+            <Circle radius="480.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3700ff" />
+                        <Stop color="#84a4d1d2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <GridPane.margin>
+                  <Insets bottom="100.0" />
+               </GridPane.margin>
+            </Circle>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.rowSpan="3">
+               <GridPane.margin>
+                  <Insets bottom="50.0" />
+               </GridPane.margin>
+               <children>
+                  <Text layoutX="283.0" layoutY="118.0" strokeWidth="0.0" style="-fx-font-size: 80;" styleClass="text-general" text="%leave.txt1" textOrigin="CENTER" />
+                  <ImageView fitHeight="367.0" fitWidth="215.0" layoutX="317.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/SadCow.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="exitButton" layoutX="179.0" layoutY="553.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="80.0" prefWidth="160.0" style="-fx-font-size: 55;" stylesheets="@../css/menu.css" text="%yes.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="general-button" />
+                        <String fx:value="text-general" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="retourButton" layoutX="498.0" layoutY="555.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="80.0" prefWidth="160.0" style="-fx-font-size: 55;" stylesheets="@../css/menu.css" text="%no.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="general-button" />
+                        <String fx:value="text-general" />
+                     </styleClass>
+                  </Button>
+                  <Text layoutX="195.0" layoutY="226.0" strokeWidth="0.0" style="-fx-font-size: 80;" styleClass="text-general" text="%leave.txt2" textOrigin="CENTER" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateRight90" preserveRatio="true" translateY="-150.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationRight.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="50.0" top="320.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateLeft90" preserveRatio="true" translateY="-150.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationLeft.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets right="50.0" top="320.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

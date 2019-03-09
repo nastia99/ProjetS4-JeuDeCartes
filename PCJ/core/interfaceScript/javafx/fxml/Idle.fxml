@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="idlePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onTouchReleased="#startGame" prefHeight="1080.0" prefWidth="1920.0" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.IdleScreenController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="334.0" layoutX="1442.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="start1" layoutX="869.0" layoutY="141.0" prefHeight="141.0" prefWidth="271.0" styleClass="text-general" stylesheets="@../css/menu.css" text="Toucher">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="start2" layoutX="780.0" layoutY="757.0" prefHeight="189.0" prefWidth="543.0" styleClass="text-general" text="pour cowmencer">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="586.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="395.0" prefWidth="780.0" text="M       O      W ">
+         <font>
+            <Font size="96.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-general" />
+            <String fx:value="text-general-size" />
+         </styleClass>
+      </Button>
+      <ImageView fx:id="cowFly" fitHeight="243.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true" rotate="-270.0">
+         <image>
+            <Image url="@../../../assets/pictures/Cow.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

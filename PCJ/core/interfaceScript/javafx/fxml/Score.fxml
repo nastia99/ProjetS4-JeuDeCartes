@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="scorePane" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.ScoreController">
+   <children>
+      <GridPane fx:id="globalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../css/menu.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle opacity="0.72" radius="480.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3700ff" />
+                        <Stop color="#84a4d1d2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets bottom="-250.0" />
+               </GridPane.margin>
+            </Circle>
+            <GridPane GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowSpan="5">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="60.0" top="60.0" />
+               </GridPane.margin>
+               <children>
+                  <Text fx:id="param_title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%score" textAlignment="CENTER" wrappingWidth="370.9367427825928" y="65.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="190.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fx:id="img1" fitHeight="106.0" fitWidth="106.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/med1.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" top="150.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="img2" fitHeight="106.0" fitWidth="106.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../assets/pictures/med2.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="90.0" left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="img3" fitHeight="106.0" fitWidth="106.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../assets/pictures/med3.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" top="120.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="img4" fitHeight="106.0" fitWidth="106.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../assets/pictures/mouche.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="85.0" left="35.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Pane fx:id="pane_Player41" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="s4" layoutX="71.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 4" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="140.0" left="180.0" right="-170.0" top="-10.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player5" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="s5" layoutX="75.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 5" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="35.0" left="180.0" right="-170.0" top="95.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player31" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="s3" layoutX="72.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 3" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="180.0" right="-170.0" top="110.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player21" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="s2" layoutX="76.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 2" wrappingWidth="133.25" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="125.0" left="180.0" right="-170.0" top="5.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player11" opacity="0.0" prefHeight="200.0" prefWidth="228.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.columnIndex="1">
+                     <children>
+                        <Text fx:id="s1" layoutX="82.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 1" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="180.0" right="-170.0" top="130.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player1" opacity="0.0" prefHeight="128.0" prefWidth="274.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+                     <children>
+                        <Text fx:id="j1" layoutX="24.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 1" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="100.0" />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="150.0" right="-170.0" top="130.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player2" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="j2" layoutX="23.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 2" wrappingWidth="133.25" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="125.0" left="150.0" right="-170.0" top="5.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player3" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="j3" layoutX="23.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 3" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="150.0" right="-170.0" top="110.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player4" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="j4" layoutX="21.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 4" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="140.0" left="150.0" right="-170.0" top="-10.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane fx:id="pane_Player51" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="j5" layoutX="20.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 5" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="35.0" left="150.0" right="-170.0" top="95.0" />
+                     </GridPane.margin>
+                  </Pane>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
+               <children>
+                  <Button fx:id="retour3" layoutX="296.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#leave" prefHeight="78.0" prefWidth="252.0" styleClass="general-button" stylesheets="@../css/menu.css" text="%leave.txt">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="retour2" layoutX="500.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#menu" prefHeight="78.0" prefWidth="226.0" styleClass="general-button" stylesheets="@../css/menu.css" text="%menu">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="77.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#restart" styleClass="general-button" stylesheets="@../css/menu.css" text="%playAgain">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="img5" fitHeight="106.0" fitWidth="106.0" layoutX="32.0" layoutY="-6.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/pictures/bouse.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateRight90" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../../../assets/etc/rotationRight.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateLeft90" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../../../assets/etc/rotationLeft.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

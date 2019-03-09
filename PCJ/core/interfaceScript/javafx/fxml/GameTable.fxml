@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="gameTablePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.GameTableController">
+   <children>
+      <Pane fx:id="pane_Player1" layoutX="134.0" layoutY="826.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" rotate="45.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="j1" layoutX="82.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 1" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Player4" layoutX="1550.0" layoutY="830.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" rotate="-45.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="j4" layoutX="76.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 4" wrappingWidth="133.25" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Player3" layoutX="1564.0" layoutY="144.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" rotate="210.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="j3" layoutX="72.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 3" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Player2" layoutX="69.0" layoutY="137.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" rotate="-210.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="j2" layoutX="71.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 2" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Player5" layoutX="800.0" layoutY="850.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" styleClass="playerOrBot" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="j5" layoutX="75.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="Joueur 5" />
+         </children>
+      </Pane>
+      <Pane layoutX="380.0" layoutY="252.0" prefHeight="540.0" prefWidth="1302.0">
+         <children>
+            <HBox fx:id="flock" layoutY="118.0" prefHeight="300.0" prefWidth="1300.0" />
+         </children>
+      </Pane>
+      <ImageView id="settingButton" fitHeight="150.0" fitWidth="200.0" layoutX="1038.0" layoutY="42.0" onMouseClicked="#paramView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/pictures/iconParameter.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="deck" layoutX="747.0" layoutY="50.0" prefHeight="210.0" prefWidth="149.0" rotate="270.0" />
+      <Pane layoutX="-80.0" layoutY="544.0" prefHeight="91.0" prefWidth="264.0" rotate="-90.0" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="round" fill="#e03838bf" layoutX="20.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="%roundTxt" textAlignment="CENTER" wrappingWidth="259.25" />
+         </children>
+      </Pane>
+      <Pane layoutX="1687.0" layoutY="539.0" prefHeight="90.0" prefWidth="231.0" rotate="90.0" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="round1" fill="#e03838bf" layoutX="-28.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" styleClass="text-general" text="%roundTxt" textAlignment="CENTER" wrappingWidth="281.25" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_PlayerScore1" layoutX="50.0" layoutY="896.0" opacity="0.0" prefHeight="118.0" prefWidth="140.0" rotate="45.0" styleClass="round" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="s1" layoutX="21.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%fly" wrappingWidth="236.39068833676902">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_PlayerScore4" layoutX="1624.0" layoutY="907.0" opacity="0.0" prefHeight="118.0" prefWidth="140.0" rotate="-45.0" styleClass="round" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="s4" layoutX="43.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="s1" wrappingWidth="210.00001196797348">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_PlayerScore5" layoutX="800.0" layoutY="957.0" opacity="0.0" prefHeight="118.0" prefWidth="140.0" styleClass="round" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="s5" layoutX="21.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="s1" wrappingWidth="236.39068603515625">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_PlayerScore3" layoutX="1622.0" layoutY="51.0" opacity="0.0" prefHeight="118.0" prefWidth="140.0" rotate="210.0" styleClass="round" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="s3" layoutX="18.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="s1" wrappingWidth="236.39068833676902">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_PlayerScore2" layoutX="5.0" layoutY="47.0" opacity="0.0" prefHeight="118.0" prefWidth="140.0" rotate="-210.0" styleClass="round" stylesheets="@../css/menu.css">
+         <children>
+            <Text fx:id="s2" layoutX="13.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="s1" wrappingWidth="251.5860824584961">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="900.0" layoutY="713.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="sens" fitHeight="150.0" fitWidth="200.0" layoutX="-4.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../assets/pictures/sens.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</Pane>

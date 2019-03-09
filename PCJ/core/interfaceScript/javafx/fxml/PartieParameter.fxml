@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="partieParameterPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="default" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.interfaceScript.javafx.controller.PartieParameterController">
+   <children>
+      <GridPane fx:id="globalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle opacity="0.72" radius="480.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3700ff" />
+                        <Stop color="#84a3cf" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Circle>
+            <GridPane GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowSpan="5">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="60.0" top="60.0" />
+               </GridPane.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%lobby.title" textAlignment="CENTER" wrappingWidth="370.9367427825928" y="65.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="190.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Pane prefHeight="81.0" prefWidth="0.0" translateY="80.0" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                     <GridPane.margin>
+                        <Insets bottom="120.0" left="160.0" right="160.0" top="120.0" />
+                     </GridPane.margin>
+                     <children>
+                        <GridPane layoutX="11.0" prefHeight="91.0" prefWidth="245.0" style="-fx-background-radius: 30; -fx-border-radius: 3;" styleClass="plusMoinsButton" stylesheets="@../css/menu.css">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="20.8000244140625" minHeight="8.799963378906249" prefHeight="8.799963378906249" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="62.40003662109374" minHeight="10.0" prefHeight="62.40003662109374" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="20.800024414062506" minHeight="10.0" prefHeight="20.800024414062506" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#removePlayer" prefHeight="50.0" prefWidth="59.0" style="-fx-font-size: 30;" styleClass="text-general" text="-" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onMouseClicked="#addPlayer" prefHeight="60.0" prefWidth="60.0" style="-fx-font-size: 30;" styleClass="text-general" text="+" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Text fx:id="nbPlayer" fill="#2c0909" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 60;" styleClass="text-general" text="0" textAlignment="CENTER" wrappingWidth="68.08689308166504" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" />
+                                 </GridPane.margin>
+                              </Text>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="81.0" prefWidth="0.0" translateX="160.0" translateY="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane layoutX="11.0" prefHeight="91.0" prefWidth="245.0" style="-fx-background-radius: 30; -fx-border-radius: 3;" styleClass="plusMoinsButton" stylesheets="@../css/menu.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="20.8000244140625" minHeight="8.799963378906249" prefHeight="8.799963378906249" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="62.40003662109374" minHeight="10.0" prefHeight="62.40003662109374" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.800024414062506" minHeight="10.0" prefHeight="20.800024414062506" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#removeBot" prefHeight="50.0" prefWidth="59.0" style="-fx-font-size: 30;" styleClass="text-general" text="-" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onMouseClicked="#addBot" prefHeight="60.0" prefWidth="60.0" style="-fx-font-size: 30;" styleClass="text-general" text="+" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Text fx:id="nbBot" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 60;" styleClass="text-general" text="0" textAlignment="CENTER" wrappingWidth="68.08689308166504" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" />
+                                 </GridPane.margin>
+                              </Text>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%lobby.nbrJR" textAlignment="CENTER" translateY="-80.0" wrappingWidth="370.9367427825928" y="20.0" GridPane.rowSpan="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-general" text="%lobby.nbrJV" textAlignment="CENTER" translateY="80.0" wrappingWidth="370.9367427825928" GridPane.rowSpan="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                  <Button layoutX="181.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="80.0" prefWidth="160.0" style="-fx-font-size: 55;" stylesheets="@../css/menu.css" text="%retour.Button">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="general-button" />
+                        <String fx:value="text-general" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="startButton" disable="true" layoutX="482.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#play" prefHeight="80.0" prefWidth="160.0" style="-fx-font-size: 55;" stylesheets="@../css/menu.css" text="%lobby.play">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="general-button" />
+                        <String fx:value="text-general" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="208.0" fitWidth="160.0" layoutX="321.0" layoutY="-114.0" pickOnBounds="true" preserveRatio="true" rotate="12.5">
+                     <image>
+                        <Image url="@../../../assets/cards/color/red.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateRight90" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationRight.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rotateLeft90" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../assets/etc/rotationLeft.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../css/menu.css" />
+            <URL value="@../css/menu.css" />
+         </stylesheets>
+      </GridPane>
+   </children>
+</Pane>

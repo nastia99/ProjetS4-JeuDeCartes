@@ -1,0 +1,26 @@
+a :hover {
+  transform: scale(1.25, 1.25);
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: black;
+  /*margin-left: 50%;*/
+}
+
+
+section {
+  margin-left: 40%;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+text-align: center;
+font-size: 50px;
+}

@@ -1,0 +1,7 @@
+package main;
+
+class Main {
+	
+	
+
+}

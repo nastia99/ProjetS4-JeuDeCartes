@@ -1,0 +1,139 @@
+*{
+	/*si besoin de faire des variables globales */
+}
+
+/* --------------- general text --------------- */
+
+.text-general {
+	-fx-font-family: "GoodDog Cool";
+}
+.text-general-size{
+	-fx-font-size:40px;
+}
+
+/* ---------- Text Area ---------- */
+
+.text-area{
+  -fx-border-radius: 100 100 100 100;
+  -fx-background-radius: 100 100 100 100;
+  -fx-background-color: transparent;
+  -fx-font-size:20px;
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that 
+  order. */
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-hbar-policy : never;
+    -fx-vbar-policy : never;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+
+/* ---------- Button ---------- */
+
+
+.general-button {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+        
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-padding: 10 20 10 20;
+}
+
+.general-button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+.plusMoinsButton{
+	-fx-padding: 10;
+	-fx-background-color: #9cc5ce;
+	-fx-background-radius: 5;
+}
+
+.playerOrBot {
+	-fx-pref-height: 110;
+	-fx-pref-width: 280;
+	-fx-background-color: rgb(234,255,234) ;
+	-fx-background-radius: 50;
+	-fx-border-radius: 50;
+	-fx-border-color: rgb(0,0,0);
+	-fx-border-width: 2px;
+}
+
+.round {
+	-fx-pref-height: 110;
+	-fx-pref-width: 280;
+	-fx-background-color: rgba(234,255,234, 0.25) ;
+	-fx-background-radius: 50;
+	-fx-border-radius: 50;
+	-fx-border-color: rgb(0,0,0);
+	-fx-border-width: 2px;
+}
+
+.popupPlayer{
+	-fx-pref-height: 375;
+	-fx-pref-width: 600;
+	-fx-background-color: rgb(128,128,128) ;
+	-fx-background-radius: 50;
+	-fx-border-radius: 50;
+	-fx-border-color: rgb(0,0,0);
+	-fx-border-width: 5px;
+}
+/*--------- Score --------------- */
+
+
+/* ---------- Background ---------- */
+
+.default{
+	-fx-background-image: url("../../../assets/pictures/background/background.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+.easter {
+	-fx-background-image: url("../../../assets/pictures/background/easter.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+.summer {
+	-fx-background-image: url("../../../assets/pictures/background/summer.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+.halloween {
+	-fx-background-image: url("../../../assets/pictures/background/halloween.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+.christmas {
+	-fx-background-image: url("../../../assets/pictures/background/christmas.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+
+
+
+
